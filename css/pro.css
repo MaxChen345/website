@@ -76,7 +76,7 @@ ol, ul { margin: 0; }
     width:100%;
     display:block;
     margin:0 0 16px 0;
-    border:1px solid #0757ba;
+    border:1px solid #086fecb8;
     border-radius:12px;
   }
   .images{
@@ -85,11 +85,11 @@ ol, ul { margin: 0; }
   
   /* 每一張圖的小區塊 */
   .img-card{
-    background: #0757ba;      /* 淡綠底色（可換） */
+    background: #086fecb8;      /* 淡綠底色（可換） */
     padding: 12px;
     border-radius: 12px;
     margin-bottom: 16px;
-    border: 1px solid #0757ba;
+    border: 1px solid #086fecb8;
   }
   
   /* 小區塊內的標題 */
