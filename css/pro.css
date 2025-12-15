@@ -1,0 +1,74 @@
+/* 基本 */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif;
+  background: #ffffff;          /* ✅ 背景 */
+  color: #111;
+}
+
+/* 版面 */
+.page{
+  width: min(900px, 92%);
+  margin: 40px auto;
+}
+
+/* 連結（像Word那條） */
+.top-link { margin: 0 0 14px; }
+a.ext-link{
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+a.ext-link:hover{ text-decoration-thickness: 3px; }  /* ✅ 超連結變化 */
+
+/* 主題/原因 */
+.meta { font-size: 20px; margin: 8px 0; }            /* ✅ 文字大小變化 */
+.label { font-weight: 800; }
+
+/* ✅ 群組選擇器（作業要求其中一種CSS寫法也可） */
+ol, ul { margin: 0; }
+
+/* 6點條列 */
+.plan{
+  margin-top: 26px;
+  padding-left: 28px;
+}
+
+/* ✅ 後代選擇器：plan 裡的 li */
+.plan li{
+  margin: 18px 0 26px;
+  font-size: 22px;
+}
+
+/* ✅ 父子選擇器：li > ul（讓子項目縮排像Word） */
+.plan li > ul{
+  margin-top: 10px;
+  padding-left: 34px;
+  font-size: 20px;
+}
+
+/* ✅ 跟屁蟲選擇器：只選“緊接在標題後面”的 ul */
+.item-title + ul{ margin-top: 12px; }
+
+/* ✅ ID 選擇器（作業要求要用到id selector） */
+#main {
+    margin-bottom: 16px;
+  }  
+
+/* ✅ 屬性選擇器（你之後放圖時會用到） */
+.img-slot[data-type="wireframe"]{ border-style: dashed; }
+.img-slot[data-type="photo"]{ border-style: solid; }
+
+/* 圖片區（先備著，不用也沒關係） */
+.images { margin-top: 40px; }
+.img-title { font-size: 18px; margin-bottom: 12px; }
+.gallery{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.img-slot{
+  height: 120px;
+  border: 2px solid #cbd5e1;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  color: #64748b;
+  background: #f8fafc;
+}
