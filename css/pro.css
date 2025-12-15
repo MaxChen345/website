@@ -25,32 +25,32 @@ a.ext-link:hover{ text-decoration-thickness: 3px; }  /* ✅ 超連結變化 */
 .meta { font-size: 20px; margin: 8px 0; }            /* ✅ 文字大小變化 */
 .label { font-weight: 800; }
 
-/* ✅ 群組選擇器（作業要求其中一種CSS寫法也可） */
+/* 群組選擇器 */
 ol, ul { margin: 0; }
 
-/* 6點條列 */
+/* 六頁估話 */
 .plan{
   margin-top: 26px;
   padding-left: 28px;
 }
 
-/* ✅ 後代選擇器：plan 裡的 li */
+/* ✅ 後代選擇器 */
 .plan li{
   margin: 18px 0 26px;
   font-size: 22px;
 }
 
-/* ✅ 父子選擇器：li > ul（讓子項目縮排像Word） */
+/* ✅ 父子選擇器*/
 .plan li > ul{
   margin-top: 10px;
   padding-left: 34px;
   font-size: 20px;
 }
 
-/* ✅ 跟屁蟲選擇器：只選“緊接在標題後面”的 ul */
+/* ✅ 跟屁蟲選擇器*/
 .item-title + ul{ margin-top: 12px; }
 
-/* ✅ ID 選擇器（作業要求要用到id selector） */
+/* ✅ ID 選擇器 */
 #main {
     margin-bottom: 16px;
   }  
@@ -79,15 +79,23 @@ ol, ul { margin: 0; }
   }  
 
 /* 圖片區（先備著，不用也沒關係） */
-.images { margin-top: 40px; }
-.img-title { font-size: 18px; margin-bottom: 12px; }
-.gallery{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.img-slot{
-  height: 120px;
-  border: 2px solid #cbd5e1;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  color: #64748b;
-  background: #f8fafc;
-}
+.layout{
+    display:flex;
+    gap:24px;
+    align-items:flex-start;
+  }
+  
+  .content{ flex:2; }
+  
+  .images{
+    flex:1;
+  }
+  
+  .images img{
+    width:100%;
+    display:block;
+    margin:0 0 16px 0;
+    border:1px solid #ccc;
+    border-radius:12px;
+  }
+  
