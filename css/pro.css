@@ -56,37 +56,18 @@ ol, ul { margin: 0; }
   }  
 
 /* 左右排版 */
-.layout {
-    display: flex;
-    gap: 24px;
-    align-items: flex-start;
-  }
-  
-  /* 左邊文字 */
-  .content {
-    flex: 2;
-  }
-  
-  /* 右邊圖片區 */
-  .images {
-    flex: 1;
-  }
-  
-  .images img {
-    width: 100%;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-  }  
-
-/* 圖片區（先備著，不用也沒關係） */
 .layout{
     display:flex;
     gap:24px;
     align-items:flex-start;
   }
   
-  .content{ flex:2; }
+  /* 左邊文字 */
+  .content{ 
+    flex:1; 
+  }
   
+  /* 右邊圖片區 */
   .images{
     flex:1;
   }
