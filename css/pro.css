@@ -116,28 +116,3 @@ ol, ul { margin: 0; }
     margin-top: 16px;
   }
   
-  /* 表頭與儲存格 */
-  .schedule-table th,
-  .schedule-table td{
-    border: 1px solid #cbd5e1;
-    padding: 12px;
-    text-align: left;
-  }
-  
-  /* 表頭樣式 */
-  .schedule-table thead th{
-    font-weight: 700;
-    background: #eef2ff;
-  }
-  
-  /* 偶數列底色（可選，加可讀性） */
-  .schedule-table tbody tr:nth-child(even){
-    background: #f8fafc;
-  }
-  
-  /* 完成日強調（對應 <tr class="finish">） */
-  .schedule-table .finish{
-    font-weight: 700;
-    background: #dcfce7;
-  }
-  
