@@ -1,11 +1,7 @@
 /* 基本 */
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif;
-  background: #ffffff;          /* ✅ 背景 */
-  color: #111;
-}
+* {
+    box-sizing: border-box;
+  }  
 
 /* 版面 */
 .page{
@@ -79,9 +75,6 @@ ol, ul { margin: 0; }
     border:1px solid #086fecb8;
     border-radius:12px;
   }
-  .images{
-    flex: 1;
-  }
   
   /* 每一張圖的小區塊 */
   .img-card{
@@ -104,12 +97,12 @@ ol, ul { margin: 0; }
     display: block;
     border-radius: 10px;
   }
-  /* 時程表區塊（對應 <section id="schedule">） */
-#schedule{
+  /* 時程表區塊 */
+  #schedule{
     margin-top: 40px;
   }
   
-  /* 表格本體（對應 <table class="schedule-table">） */
+  /* 表格本體*/
   .schedule-table{
     width: 100%;
     border-collapse: collapse;
