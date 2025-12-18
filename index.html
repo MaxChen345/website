@@ -1,29 +1,62 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-    <head>
-        <meta charset="UTF-8">
-        <title>我的首頁</title>
-        <style>
-          body {
-            font-family: "微軟正黑體"; /* 改用中文好讀的字體 */
-            background-color: #f5f5f5; /* 背景顏色變成淡灰色 */
-            text-align: center; /* 讓文字與圖片置中 */
-          }
-          img {
-            width: 200px; /* 限制圖片寬度，不會太大 */
-            border-radius: 10px; /* 讓照片邊角變圓潤 */
-            margin-top: 10px;
-          }
-        </style>
-      </head>
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1999錢園涮涮鍋｜首頁</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
 <body>
-    <p>姓名：陳泰丞</p>
-    <p>學號：414421256</p>
-    <p>統計資訊學系一年級</p>
-    <p>日期時間：10/13 20:30</p>
-    <img src="images/IMG_9386.JPG" alt="我的照片">
-    <p>本網站將使用HTML5/CSS3建構。敬請期待···</p>
-    <p>update at 28/10/25 17:00</p>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="site-header" id="top">
+    <div class="brand">
+      <!-- 先用文字佔位，之後再換成 <img src="images/logo.png" alt="..."> -->
+      <div class="logo-placeholder" aria-hidden="true">LOGO</div>
+
+      <div class="brand-text">
+        <h1 class="brand-name">1999錢園涮涮鍋</h1>
+        <p class="brand-tagline">溫暖、好吃、份量足</p>
+      </div>
+    </div>
+
+    <nav class="site-nav" aria-label="主要導覽">
+      <a class="nav-link" href="index.html">首頁</a>
+      <a class="nav-link" href="location.html">店址</a>
+      <a class="nav-link" href="news.html">最新活動</a>
+      <a class="nav-link" href="menu.html">菜單</a>
+      <a class="nav-link" href="features.html">特色</a>
+      <a class="nav-link" href="member.html">會員</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page">
+    <section class="hero">
+      <div class="hero-photo" aria-label="店面/招牌照片佔位">
+        （之後放店面照片）
+      </div>
+
+      <div class="hero-text">
+        <h2 class="section-title">簡短介紹</h2>
+        <p>
+          我們是一家主打新鮮食材與溫暖湯頭的涮涮鍋店，
+          希望用這個網站讓大家更快了解店址、菜單與最新活動。
+        </p>
+
+        <p class="quick-info">
+          <span class="label">電話：</span><a class="tel" href="tel:000000000">（填你的電話）</a><br>
+          <span class="label">地址：</span>（填你的地址）
+        </p>
+
+        <a class="cta" href="menu.html">先看菜單 →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>地址：（填你的地址）｜© 1999錢園涮涮鍋</p>
+    <a class="to-top" href="#top">回到頂部</a>
+  </footer>
 </body>
 </html>
