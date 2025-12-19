@@ -1,25 +1,30 @@
 * { box-sizing: border-box; }
 
 body{
-    body{
         margin:0;
         font-family: system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif;
         color:#111;
         line-height:1.6;
       
         /* ✅ 大理石背景 */
-        background-image: url("../images/marble.jpg");
+        background-image: url("images/background.png");
         background-size: cover;          /* 填滿畫面 */
         background-position: center;     /* 置中 */
         background-repeat: no-repeat;    /* 不重複 */
         background-attachment: fixed;    /* 滾動時背景不跟著動（可選） */
-      }
-      
 }
 
 .page{
-  width: min(980px, 92%);
-  margin: 28px auto;
+        width: min(980px, 92%);
+        margin: 28px auto;
+      
+        /* ✅ 內容卡片 */
+        background: rgba(255,255,255,0.88);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(226,232,240,0.9);
+        border-radius: 18px;
+        padding: 18px;
+        box-shadow: 0 10px 30px rgba(15,23,42,0.12);     
 }
 
 /* skip link */
