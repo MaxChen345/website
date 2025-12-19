@@ -44,12 +44,23 @@ body{
 /* header */
 .site-header{
     position: sticky;
-    top:0;
-    background: rgba(255,255,255,0.75);
+    top: 0;
+  
+    /* 🔥 Logo 當背景 */
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 220px auto;
+  
+    /* 預留空間給 logo */
+    padding: 28px 20px 20px 260px;
+  
+    background-color: rgba(255,255,255,0.85);
     backdrop-filter: blur(6px);
-    border-bottom:1px solid #e5e7eb;
-    padding: 14px 0;
-  }  
+  
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
 
 .brand{
   width: min(980px, 92%);
