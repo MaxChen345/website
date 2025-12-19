@@ -1,5 +1,5 @@
 * { box-sizing: border-box; }
-body{ outline: 10px solid red !important; }
+/* body{ outline: 10px solid red !important; } */
 
 
 body{
@@ -43,12 +43,13 @@ body{
 
 /* header */
 .site-header{
-  position: sticky;
-  top:0;
-  background:#fff;
-  border-bottom:1px solid #e5e7eb;
-  padding: 14px 0;
-}
+    position: sticky;
+    top:0;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    border-bottom:1px solid #e5e7eb;
+    padding: 14px 0;
+  }  
 
 .brand{
   width: min(980px, 92%);
