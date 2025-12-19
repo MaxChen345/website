@@ -9,7 +9,7 @@ body{
         line-height:1.6;
       
         /* ✅ 大理石背景 */
-        background-image: url("images/background.png");
+        background-image: url("../images/background.png");
         background-size: cover;          /* 填滿畫面 */
         background-position: center;     /* 置中 */
         background-repeat: no-repeat;    /* 不重複 */
