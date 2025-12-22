@@ -229,6 +229,17 @@ body{
   .info-actions{
     margin-top: 12px;
   }
+
+  .hours{
+    margin: 8px 0 0 0;
+    padding-left: 18px;   /* 有縮排 */
+    line-height: 1.9;
+  }
+  
+  .hours__label{
+    font-weight: 700;
+    margin-right: 6px;
+  }
   
   /* 地圖容器：控制比例與圓角 */
   .map-embed{
