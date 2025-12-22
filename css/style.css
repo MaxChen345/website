@@ -46,30 +46,29 @@ body{
     position: sticky;
     top: 0;
   
-    /* 🔥 Logo 當背景 */
-    background-image: url("../images/logo2.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 220px auto;
+    /* ✅ 深黑（貼近 logo 黑底，不突兀） */
+    background: #0b0b0d;
   
-    /* 預留空間給 logo */
-    padding: 28px 20px 20px 260px;
-  
-    background-color: rgba(255,255,255,0.85);
-    backdrop-filter: blur(6px);
-  
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 14px 0;
   }
-  
 
 .brand{
-  width: min(980px, 92%);
-  margin: 0 auto 10px auto;
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
+    width: min(980px, 92%);
+    margin: 0 auto 10px auto;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}  
 
+.brand-logo{
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 14px;
+    background: transparent; /* 你 logo 本來就黑底，不用再加 */
+}
+  
 .logo-placeholder{
   width:56px;
   height:56px;
@@ -81,28 +80,42 @@ body{
   font-weight:700;
 }
 
-.brand-name{ margin:0; font-size:22px; }
-.brand-tagline{ margin:2px 0 0 0; color:#475569; font-size:14px; }
+.brand-name{
+    margin: 0;
+    font-size: 22px;
+    color: #ffffff;
+  }
+  
+  .brand-tagline{
+    margin: 2px 0 0 0;
+    color: rgba(255,255,255,0.72);
+    font-size: 14px;
+}  
 
 /* nav（父子選擇器示範：nav > a） */
 .site-nav{
-  width: min(980px, 92%);
-  margin: 0 auto;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
+    width: min(980px, 92%);
+    margin: 0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
 }
+  
 .site-nav > a{
-  text-decoration:none;
-  color:#0f172a;
-  padding:8px 12px;
-  border:1px solid #e2e8f0;
-  border-radius:999px;
+    text-decoration:none;
+    color: rgba(255,255,255,0.92);
+    padding:8px 12px;
+  
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius:999px;
+  
+    background: rgba(255,255,255,0.06);
 }
+  
 .site-nav > a:hover{
-  background:#0f172a;
-  color:#fff;
+    background: rgba(255,255,255,0.18);
 }
+  
 
 /* hero 左右排版 */
 .hero{
