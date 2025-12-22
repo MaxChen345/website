@@ -273,3 +273,32 @@ body{
     }
   }
   
+
+
+/* --------------------------------------------------------*/
+/* MENU */
+.muted{ color:#475569; margin: 6px 0 14px 0; }
+
+.menu-card{
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(226,232,240,0.9);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.12);
+}
+
+.menu-link{ display:block; }
+
+.menu-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+}
+
+.menu-caption{
+  margin-top: 10px;
+  display:flex;
+  justify-content:flex-end;
+}
