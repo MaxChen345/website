@@ -302,3 +302,74 @@ body{
   display:flex;
   justify-content:flex-end;
 }
+
+
+
+/* ===== features.html：特色頁（方案A） ===== */
+
+.feature{
+    display: flex;
+    gap: 18px;
+    align-items: stretch;
+  }
+  
+  /* 左邊黑色資訊卡 */
+  .feature-card{
+    flex: 1;
+    background: rgba(0,0,0,0.78);
+    color: #fff;
+    border-radius: 18px;
+    padding: 18px;
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  
+  .feature-title{
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+  
+  .feature-lead{
+    margin: 0 0 12px 0;
+    opacity: 0.92;
+    line-height: 1.8;
+  }
+  
+  .feature-list{
+    margin: 0 0 14px 18px;
+    padding: 0;
+  }
+  
+  .feature-list .k{
+    font-weight: 800;
+  }
+  
+  /* 右邊照片區：先做佔位框 */
+  .feature-media{
+    flex: 1;
+    border-radius: 18px;
+    border: 2px solid rgba(226,232,240,0.9);
+    background: rgba(255,255,255,0.75);
+    display: grid;
+    place-items: center;
+    min-height: 320px;
+  }
+  
+  .feature-media-text{
+    margin: 0;
+    color: #334155;
+    font-weight: 700;
+  }
+  
+  /* 小螢幕：改上下 */
+  @media (max-width: 720px){
+    .feature{ flex-direction: column; }
+  }
+  
+  .feature-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+  }
+  
