@@ -347,3 +347,8 @@ body{
     .feature-image{ min-height: 180px; }
   }
   
+  .page-features{
+    background: transparent;
+    box-shadow: none;
+  }
+  
