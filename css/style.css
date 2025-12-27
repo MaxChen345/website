@@ -348,7 +348,8 @@ body{
   }
   
   .page-features{
-    background: transparent;
+    background: #AD1C42;
+    backdrop-filter: none;
     box-shadow: none;
   }
   
