@@ -391,13 +391,7 @@ body{
     color: rgba(255,255,255,0.9);
   }
   
-  /* 手機版：三個改直排 */
-  @media (max-width: 720px){
-    .feature-boxes{
-      grid-template-columns: 1fr;
-    }
-  }
-  
+
   
   
   .feature-img{
@@ -406,5 +400,69 @@ body{
     object-fit: cover;
     border-radius: 16px;
     display: block;
+  }
+  
+  /* 三個特色：一個特色一排 */
+.feature-rows{
+    display: grid;
+    gap: 18px;
+    margin-top: 14px;
+  }
+  
+  /* 每一排：左文字 + 右照片 */
+  .row{
+    display: flex;
+    gap: 16px;
+    align-items: stretch;
+  }
+  
+  /* 左邊文字卡 */
+  .row-card{
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 14px 16px;
+  }
+  
+  /* 右邊照片佔位 */
+  .row-media{
+    flex: 1;
+    border: 2px solid #cbd5e1;
+    border-radius: 14px;
+    background: #f8fafc;
+    display: grid;
+    place-items: center;
+    color: #64748b;
+    min-height: 140px;
+  }
+  
+  .row-title{
+    margin: 0 0 6px 0;
+    font-size: 18px;
+  }
+  
+  .row-text{
+    margin: 0;
+    color: #334155;
+    line-height: 1.7;
+  }
+  
+  .row-media-text{
+    margin: 0;
+  }
+  
+  /* 手機：上下堆疊 */
+  @media (max-width: 720px){
+    .row{ flex-direction: column; }
+    .row-media{ min-height: 180px; }
+  }
+  
+  .row-img{
+    flex: 1;
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    object-fit: cover;
   }
   
