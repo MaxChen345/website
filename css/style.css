@@ -359,11 +359,46 @@ body{
     color: #334155;
     font-weight: 700;
   }
-  
-  /* 小螢幕：改上下 */
-  @media (max-width: 720px){
-    .feature{ flex-direction: column; }
+
+
+  /* 三個特色區塊 */
+.feature-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 14px 0 18px 0;
   }
+  
+  .feature-boxes{
+    display: flex;
+    flex-direction: column;   /* 關鍵就在這一行 */
+    gap: 12px;
+    margin: 14px 0 18px 0;
+  }
+  
+  
+  .feature-box-title{
+    margin: 0 0 6px 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+  }
+  
+  .feature-box-text{
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+  }
+  
+  /* 手機版：三個改直排 */
+  @media (max-width: 720px){
+    .feature-boxes{
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
   
   .feature-img{
     width: 100%;
