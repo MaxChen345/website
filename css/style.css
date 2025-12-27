@@ -353,3 +353,40 @@ body{
     box-shadow: none;
   }
   
+
+  /* ===== member.html ===== */
+.page-member{
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(226,232,240,0.9);
+    border-radius: 18px;
+    padding: 18px;
+  }
+  
+  .member-lead{
+    margin: 6px 0 14px 0;
+    color: #334155;
+  }
+  
+  .member-card{
+    display: block;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(226,232,240,0.9);
+    box-shadow: 0 10px 30px rgba(15,23,42,0.12);
+  }
+  
+  .member-card img{
+    width: 100%;
+    display: block;
+  }
+  
+  .member-card:hover{
+    transform: translateY(-2px);
+    transition: transform 160ms ease;
+  }
+  
+  .member-cta-wrap{
+    margin: 14px 0 0 0;
+  }
+  
