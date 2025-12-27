@@ -305,113 +305,23 @@ body{
 
 
 
-/* ===== features.html：特色頁（方案A） ===== */
-
-.feature{
-    display: flex;
-    gap: 18px;
-    align-items: stretch;
-  }
-  
-  /* 左邊黑色資訊卡 */
-  .feature-card{
-    flex: 1;
-    background: rgba(0,0,0,0.78);
-    color: #fff;
-    border-radius: 18px;
-    padding: 18px;
-    border: 1px solid rgba(255,255,255,0.12);
-  }
-  
-  .feature-title{
-    margin: 0 0 10px 0;
-    font-size: 20px;
-  }
-  
-  .feature-lead{
-    margin: 0 0 12px 0;
-    opacity: 0.92;
-    line-height: 1.8;
-  }
-  
-  .feature-list{
-    margin: 0 0 14px 18px;
-    padding: 0;
-  }
-  
-  .feature-list .k{
-    font-weight: 800;
-  }
-  
-  /* 右邊照片區：先做佔位框 */
-  .feature-media{
-    flex: 1;
-    border-radius: 18px;
-    border: 2px solid rgba(226,232,240,0.9);
-    background: rgba(255,255,255,0.75);
-    display: grid;
-    place-items: center;
-    min-height: 320px;
-  }
-  
-  .feature-media-text{
-    margin: 0;
-    color: #334155;
-    font-weight: 700;
-  }
-
-
-  /* 三個特色區塊 */
-.feature-boxes{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin: 14px 0 18px 0;
-  }
-  
-  .feature-boxes{
-    display: flex;
-    flex-direction: column;   /* 關鍵就在這一行 */
-    gap: 12px;
-    margin: 14px 0 18px 0;
-  }
-  
-  
-  .feature-box-title{
-    margin: 0 0 6px 0;
-    font-size: 16px;
-    font-weight: 800;
-    color: #ffffff;
-  }
-  
-  .feature-box-text{
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.6;
-    color: rgba(255,255,255,0.9);
-  }
-  
-
-  
-  
-/* 每個特色自己的外框（獨立卡片） */
+/* 特色 =============================== */
 .feature-block{
     background: rgba(255,255,255,0.92);
     border: 1px solid rgba(226,232,240,0.9);
     border-radius: 18px;
     padding: 18px;
     box-shadow: 0 10px 30px rgba(15,23,42,0.10);
-    margin: 18px 0;              /* ✅ 三個區塊彼此分開 */
+    margin: 18px 0;
   }
   
-  /* 左右排版 */
+  /* 一排：左文字 + 右圖片 */
   .feature-row{
     display: flex;
     gap: 16px;
     align-items: stretch;
   }
   
-  /* 左邊文字盒 */
   .feature-text{
     flex: 1;
     background: #2f2f2f;
@@ -420,7 +330,6 @@ body{
     border-radius: 14px;
   }
   
-  /* 右邊圖片佔位 */
   .feature-image{
     flex: 1;
     background: #f8fafc;
@@ -429,66 +338,12 @@ body{
     display: grid;
     place-items: center;
     color: #64748b;
-  }
-
-  
-  
-  /* 每一排：左文字 + 右照片 */
-  .row{
-    display: flex;
-    gap: 16px;
-    align-items: stretch;
-  }
-  
-  /* 左邊文字卡 */
-  .row-card{
-    flex: 1;
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 14px;
-    padding: 14px 16px;
-  }
-  
-  /* 右邊照片佔位 */
-  .row-media{
-    flex: 1;
-    border: 2px solid #cbd5e1;
-    border-radius: 14px;
-    background: #f8fafc;
-    display: grid;
-    place-items: center;
-    color: #64748b;
     min-height: 140px;
-  }
-  
-  .row-title{
-    margin: 0 0 6px 0;
-    font-size: 18px;
-  }
-  
-  .row-text{
-    margin: 0;
-    color: #334155;
-    line-height: 1.7;
-  }
-  
-  .row-media-text{
-    margin: 0;
   }
   
   /* 手機：上下堆疊 */
   @media (max-width: 720px){
-    .row{ flex-direction: column; }
-    .row-media{ min-height: 180px; }
+    .feature-row{ flex-direction: column; }
+    .feature-image{ min-height: 180px; }
   }
-  
-  .row-img{
-    flex: 1;
-    width: 100%;
-    border-radius: 14px;
-    border: 1px solid #e2e8f0;
-    object-fit: cover;
-  }
-
-
   
