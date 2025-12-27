@@ -307,13 +307,13 @@ body{
 
 /* 特色 =============================== */
 .feature-block{
-    background: rgba(255,255,255,0.92);
-    border: 1px solid rgba(226,232,240,0.9);
-    border-radius: 18px;
-    padding: 18px;
-    box-shadow: 0 10px 30px rgba(15,23,42,0.10);
-    margin: 18px 0;
+    background: transparent;   /* ✅ 拿掉底色 */
+    border: none;               /* ✅ 拿掉外框 */
+    box-shadow: none;           /* ✅ 拿掉陰影 */
+    padding: 0;                 /* ✅ 不再需要內距 */
+    margin: 56px 0;             /* 間距下面會再調 */
   }
+  
   
   /* 一排：左文字 + 右圖片 */
   .feature-row{
