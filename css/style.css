@@ -331,11 +331,11 @@ body{
   }
   
   .feature-image{
-    flex: 1;
+    flex: 2;
   
     /* ✅ 關鍵：規定照片區塊尺寸 */
     max-width: 420px;
-    height: 220px;
+    height: 330px;
   
     background: #f8fafc;
     border: 2px dashed #cbd5e1;
