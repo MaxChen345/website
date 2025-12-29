@@ -319,14 +319,16 @@ body{
   .feature-row{
     display: flex;
     gap: 16px;
-    align-items: stretch;
+    align-items: center;
+    position: relative;
   }
   
   .feature-text{
     flex: 1;
     background: #2f2f2f;
     color: #fff;
-    padding: 16px;
+    max-width: 420px;
+    padding: 18px 20px;
     border-radius: 14px;
   }
   
@@ -360,7 +362,7 @@ body{
   }
 
   .feature-image.portrait{
-    max-width: 220px;
+    max-width: 550px;
     height: 440px;   /* 直向比例 */
   }
   
