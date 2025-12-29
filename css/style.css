@@ -353,6 +353,12 @@ body{
     object-fit: cover;     /* ✅ 不變形、填滿 */
     border-radius: 12px;
   }
+
+  .feature-image.landscape{
+    max-width: 420px;
+    height: 220px;   /* 橫向比例 */
+  }
+  
   
   
   /* 手機：上下堆疊 */
