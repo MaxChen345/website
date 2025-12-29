@@ -335,10 +335,6 @@ body{
   .feature-image{
     flex: 2;
   
-    /* ✅ 關鍵：規定照片區塊尺寸 */
-    max-width: 550px;
-    height: 330px;
-  
     background: #f8fafc;
     border: 2px dashed #cbd5e1;
     border-radius: 14px;
@@ -357,12 +353,12 @@ body{
   }
 
   .feature-image.landscape{
-    max-width: 550px;
+    max-width: 500px;
     height: 330px;   /* 橫向比例 */
   }
 
   .feature-image.portrait{
-    max-width: 550px;
+    max-width: 500px;
     height: 440px;   /* 直向比例 */
   }
   
