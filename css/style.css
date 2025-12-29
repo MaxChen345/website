@@ -355,9 +355,15 @@ body{
   }
 
   .feature-image.landscape{
-    max-width: 420px;
-    height: 220px;   /* 橫向比例 */
+    max-width: 550px;
+    height: 330px;   /* 橫向比例 */
   }
+
+  .feature-image.portrait{
+    max-width: 220px;
+    height: 440px;   /* 直向比例 */
+  }
+  
   
   
   
