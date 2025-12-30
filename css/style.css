@@ -43,8 +43,8 @@ body{
 
 /* header */
 .site-header{
-    position: sticky;
-    top: 0;
+    position: static;
+    top: auto;
   
     /* ✅ 深黑（貼近 logo 黑底，不突兀） */
     background: #0b0b0d;
