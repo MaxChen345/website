@@ -353,12 +353,12 @@ body{
   }
 
   .feature-image.landscape{
-    max-width: 440px;
+    max-width: 400px;
     height: 330px;   /* 橫向比例 */
   }
 
   .feature-image.portrait{
-    max-width: 440px;
+    max-width: 400px;
     height: 440px;   /* 直向比例 */
   }
   
