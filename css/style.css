@@ -201,6 +201,10 @@ body{
 
 
 
+
+
+
+
 /*-----------------------------------------------------*/
 
 /* location page */
@@ -275,6 +279,12 @@ body{
   
 
 
+
+
+
+
+
+
 /* --------------------------------------------------------*/
 /* MENU */
 .muted{ color:#475569; margin: 6px 0 14px 0; }
@@ -305,7 +315,14 @@ body{
 
 
 
-/* 特色 =============================== */
+
+
+
+
+
+
+
+/* features 特色 =============================== */
 .feature-block{
     background: transparent;   /* ✅ 拿掉底色 */
     border: none;               /* ✅ 拿掉外框 */
@@ -499,5 +516,116 @@ body{
   
   @media (max-width: 720px){
     .news-meta{ flex-direction: column; align-items:flex-start; }
+  }
+  
+
+
+
+
+
+
+
+
+  /* ===============================
+   冷凍商品選購頁（shop.html）
+================================ */
+
+.page-shop {
+    padding: 40px 24px 80px;
+  }
+  
+  /* 標題 */
+  .shop-hero {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .shop-hero h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+  }
+  
+  .shop-hero p {
+    margin: 0;
+    color: #64748b;
+  }
+  
+  /* 商品卡片格線 */
+  .shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  
+  /* 卡片 */
+  .shop-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  
+  .shop-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+  }
+  
+  .shop-card a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* 🔑 圖片區：4:3 比例 */
+  .shop-card-image {
+    aspect-ratio: 4 / 3;
+    background: #e5e7eb;
+    overflow: hidden;
+  }
+  
+  .shop-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* 文字區 */
+  .shop-card-body {
+    padding: 16px;
+  }
+  
+  .shop-card-body h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+  }
+  
+  .shop-card-body .desc {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #64748b;
+  }
+  
+  .shop-card-body .price {
+    margin: 0 0 12px;
+    font-weight: 700;
+  }
+  
+  /* CTA */
+  .shop-card-body .cta {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #111827;
+    color: #fff;
+    border-radius: 999px;
+    font-size: 14px;
+  }
+  
+  /* 下方說明 */
+  .shop-note {
+    margin-top: 40px;
+    text-align: center;
+    color: #475569;
+    font-size: 14px;
   }
   
