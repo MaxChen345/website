@@ -113,6 +113,7 @@ img, iframe {
   
     background: transparent;   /* ❗ 重點 */
 }  
+
   
 @media (max-width: 520px){
     .site-nav{
@@ -123,6 +124,11 @@ img, iframe {
       overflow-x: auto;                 /* 可左右滑 */
       -webkit-overflow-scrolling: touch;
       gap: 10px;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .site-nav::-webkit-scrollbar {
+        display: none;
     }
     .site-nav > a{ flex: 0 0 auto; }
   }
