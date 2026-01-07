@@ -16,6 +16,17 @@ body{
         background-attachment: fixed;    /* 滾動時背景不跟著動（可選） */
 }
 
+html, body { 
+    width: 100%;
+    overflow-x: hidden;   /* 止血：避免右側留白（水平卷軸） */
+}
+  
+img, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+  
 .page{
         width: min(980px, 92%);
         margin: 28px auto;
@@ -102,6 +113,19 @@ body{
   
     background: transparent;   /* ❗ 重點 */
 }  
+  
+@media (max-width: 520px){
+    .site-nav{
+      width: 100%;
+      padding: 0 10px;
+      margin: 0 auto;
+      flex-wrap: nowrap;
+      overflow-x: auto;                 /* 可左右滑 */
+      -webkit-overflow-scrolling: touch;
+      gap: 10px;
+    }
+    .site-nav > a{ flex: 0 0 auto; }
+  }
   
   /* nav 按鈕 */
 .site-nav > a{
