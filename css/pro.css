@@ -24,7 +24,7 @@ a.ext-link:hover{ text-decoration-thickness: 3px; }  /* ✅ 超連結變化 */
 /* 群組選擇器 */
 ol, ul { margin: 0; }
 
-/* 六頁估話 */
+/* 六頁 */
 .plan{
   margin-top: 26px;
   padding-left: 28px;
